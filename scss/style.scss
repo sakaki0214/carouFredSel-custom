@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import "compass";
+@import "base";
+
+.page-heading {
+  padding:50px 0 20px;
+  font-weight:normal;
+  font-size:20px;
+  text-align:center;
+  color:#8FC7C7;
+}
+.mainvisual {
+  width:680px;
+  margin:0 auto 20px;
+  position:relative;
+  overflow:hidden;
+  height: 573px;
+  background:#C5E0E0;
+  border:5px solid #C5E0E0;
+  border-bottom:10px solid #C5E0E0;
+  .slide-arrow {
+    position:absolute;
+    bottom:34px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    z-index:9999;
+    background:#C5E0E0;
+    color:#384E4E;
+    font-weight:bold;
+    border-radius:40px;
+    text-align:center;
+    line-height:40px;
+    &.left {
+      left:0;
+    }
+    &.right {
+      right:0;
+    }
+  }
+  .mainvisual-thumbs {
+    margin-left:15px;
+    background:#C5E0E0;
+    img {
+      width:160px;
+      margin:10px 6px 0 0;
+      cursor:pointer;
+      border:2px solid #C5E0E0;
+      &.selected {
+        border:2px solid #384E4E;
+      }
+    }
+  }
+}
+.mainvisual-list {
+  > li {
+    float: left;
+    background-color: #eae9e4;
+    width:680px;
+    height:453px;
+    text-align:center;
+    position:relative;
+    img {
+      width:100%;
+    }
+  }
+}
